@@ -8,6 +8,15 @@ body {
     background: rgba(255, 255, 255, 0);
 }
 
+p{
+    font-family: arial;
+    font-size: 85%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 2%;
+    text-align: justify;
+    
+}
 
 *,
 *:before,
@@ -18,19 +27,64 @@ body {
 }
 
 #pagina{
-	width: 100vw; /* largura */
+	width: 99vw; /* largura */
     height: 100vh; /* altura */
+    margin-top: 0;
     background: #ece4db;
     background: -moz-linear-gradient(-45deg, #ece4db 0%, #FFACE5 100%);
     background: -webkit-linear-gradient(-45deg, #ece4db 0%, #FFACE5 100%);
     background: linear-gradient(135deg, #ece4db 0%, #FFACE5 100%);
+    position:sticky;
+    background-size: cover;
     
 }
 
-#paginaCor{
-    width: 100%;
+.divTexto{
+
+    width: 80%;
+    height: 75%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 2px solid rgba(255, 255, 255, 0.295);
+    border-radius: 40px;
+    background: #e4bdc3cc;
 
 }
+
+.divTexto1{
+
+    width: 50%;
+    height: 100%;
+    background: #00000000;
+
+}
+
+.divTexto2{
+
+    width: 50%;
+    height: 100%;
+    background: #00000000;
+    float: right;
+    border-left: 1px solid rgba(255, 255, 255, 0.295);
+
+}
+
+
+.divTitulo{
+
+    width: 80%; /* largura */
+    height: 80px;
+    max-height: 150px;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 40px 40px 40px 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+
 
 #barraLateralInicial{
 	width: 10vw; /* largura */
@@ -38,8 +92,9 @@ body {
     background-image: url(../image/BarraLateralKpop3.jpg);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment:fixed;
     background-position: 0% 100%;
+    border-right: 3px solid rgb(0, 0, 0);
     
 }
 
@@ -51,6 +106,7 @@ body {
     background: -moz-linear-gradient(-45deg, #FFACE5 0%, #ffffff3f 100%);
     background: -webkit-linear-gradient(-45deg, #FFACE5 0%, #ffffff3b 100%);
     background: linear-gradient(135deg, #FFACE5 0%, #ffffff3a 100%);
+    position: fixed;
 }
 
 .Kpop{
@@ -59,7 +115,7 @@ body {
     text-shadow: 1px 2px #9ccfec, 2px 4px #9ccfec, 3px 6px #9ccfec, 4px 8px #f8edeb, 5px 10px #f8edeb, 6px 12px #f8edeb, 7px 14px #9ccfec, 8px 16px #9ccfec, 9px 18px #9ccfec, 10px 20px #9ccfec;
 }
 
-.line {
+.line{
     padding: 30px;
     color: rgba(255, 255, 255, 0.75);
     font-family: "Special Elite", monospace;
@@ -69,7 +125,19 @@ body {
     overflow: hidden;
 }
 
-.menu {
+.textAnim{
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Special Elite", monospace;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu{
     background: #FFACE5;
     background: -moz-linear-gradient(-45deg, #FFACE5 0%, #ffffff3f 100%);
     background: -webkit-linear-gradient(-45deg, #FFACE5 0%, #ffffff3b 100%);
@@ -87,14 +155,15 @@ body {
     border-right: 2px solid rgba(255, 255, 255, 1);
     border-bottom: 2px solid rgba(255, 255, 255, 1);
     border-top: 1px solid rgba(255, 255, 255, 0.75);
+    position: fixed;
 }
 
-.menu:hover {
+.menu:hover{
     box-shadow: 0 0 0 8px #FFF, 0 0 0 8px #FFF;
     
 }
 
-.hamburger {
+.hamburger{
     position: relative;
     top: 29px;
     left: 15px;
@@ -107,7 +176,7 @@ body {
 }
 
 .hamburger:after,
-.hamburger:before {
+.hamburger:before{
     background: rgb(255, 255, 255);
     content: "";
     display: block;
@@ -117,11 +186,11 @@ body {
     height: 100%;
 }
 
-.hamburger:before {
+.hamburger:before{
     top: -10px;
 }
 
-.hamburger:after {
+.hamburger:after{
     bottom: -10px;
 }
 
@@ -129,31 +198,31 @@ input {
     display: none;
 }
 
-input:checked ~ label .menu {
+input:checked ~ label .menu{
     box-shadow: 0 0 0 80vw rgba(255, 255, 255, 0.281), 0 0 0 120vh rgba(255, 255, 255, 0.301);
     
 }
 
-input:checked ~ label .hamburger {
+input:checked ~ label .hamburger{
     transform: rotate(45deg);
 }
 
-input:checked ~ label .hamburger:after {
+input:checked ~ label .hamburger:after{
     transform: rotate(90deg);
     bottom: 0;
 }
 
-input:checked ~ label .hamburger:before {
+input:checked ~ label .hamburger:before{
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked ~ ul {
+input:checked ~ ul{
     opacity: 1;
     visibility: visible;
 }
 
-ul {
+ul{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -166,9 +235,33 @@ ul {
     z-index: 2;
 }
 
-a {
-    color: #FFACE5;
+a{
+    color: #000000;
     display: block;
     margin-bottom: 1em;
     text-decoration: none;
+    font-family: "Special Elite", monospace;
+}
+
+.typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 3s steps(40) 1s normal both;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to {
+        width: 17.7em;
+    }
+}
+
+@keyframes blinkCursor{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
 }
