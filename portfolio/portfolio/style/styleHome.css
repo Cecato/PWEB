@@ -1,21 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
 body {
-    background-color: black;
-    background: radial-gradient(circle, #94bbe9, #eeaeca);
-	background-size: 400% 400%;
-	animation: gradient 25s;
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #abdecb, #ede7a5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #abdecb, #ede7a5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -olinear-gradient(to top, #abdecb, #ede7a5);   
+	/*background-size: 400% 400%;
+	/*animation: gradient 10s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;*/
     
 }
 
 @keyframes gradient {
     0%{
-        background-position: 0% 90%;
+        background-position: 0% 25%;
     }
-    90%{
-        background-position: 90% 0%;
+    25%{
+        background-position: 25% 50%;
+    }
+    50%{
+        background-position: 50% 75%;
+    }
+    75%{
+        background-position: 75% 100%;
+    }
+    100%{
+        background-position: 100% 75%;
+    }
+    75%{
+        background-position: 75% 50%;
     }
 }
 

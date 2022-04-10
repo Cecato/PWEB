@@ -2,7 +2,7 @@
 
 body {
     background-color: black;
-    background: radial-gradient(circle, #94bbe9, #eeaeca);
+    background: radial-gradient(circle, #abdecb, #ede7a5);
 	background-size: 400% 400%;
 	animation: gradient 20s;
     animation-iteration-count: infinite;
@@ -36,7 +36,7 @@ a{
 
 a:hover{
     transition: 0.6s linear;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
   
 section{
